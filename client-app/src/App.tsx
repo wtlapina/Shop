@@ -26,11 +26,9 @@ class App extends Component {
           <Header.Content>Uptime Guarantee</Header.Content>
         </Header>
         <List>
-          
-            {this.state.values.map((value: any) => {
-            <List.Item key={value.id}>{value.name}</List.Item>
-            })}
-          
+            {this.state.values.map((value: any) => (
+              <List.Item key={value.id}>{value.name}</List.Item>
+            ))}
         </List>
       </div>
     );
